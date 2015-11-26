@@ -1,6 +1,6 @@
 close all;clear;clc;
 
-inputImagePath = '';
+inputImagePath = 'inputImgs/girl2.png';
 I = imread(inputImagePath);
 r = 15;
 beta = 1.0;
