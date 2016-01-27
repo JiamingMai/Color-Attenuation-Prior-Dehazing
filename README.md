@@ -3,7 +3,7 @@
 This MATLAB code is an implementation of the single image dehazing 
 algorithm proposed in the paper "A Fast Single Image Haze Removal 
 Algorithm using Color Attenuation Prior" by Qingsong Zhu, Jiaming Mai 
-and Ling Shao. 
+and Ling Shao. (http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7128396&newsearch=true&queryText=A%20Fast%20Single%20image%20haze%20removal%20using%20color%20attenuation%20prior)
 
 ***********************************************************************
 The code can be run on MATLAB R2014a. Make sure your MATLAB has 
