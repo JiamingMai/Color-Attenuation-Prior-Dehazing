@@ -10,7 +10,7 @@ The code can be run on MATLAB R2014a. Make sure your MATLAB has
 included guided filter proposed in "Guided Image Filtering" by Kaiming He,
 Jian Sun, and Xiaoou Tang.
 
-Intructions:
+Introduction:
 - 1) Put the hazy image into the directory "inputImgs"
 - 2) Modify the image path at the begining of "runDehazing.m"
 - 3) Run the "runDehazing.m" script in MATLAB
