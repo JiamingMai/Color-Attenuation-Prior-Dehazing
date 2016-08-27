@@ -1,6 +1,6 @@
 close all;clear;clc;
 
-inputImagePath = 'inputImgs/girl2.png';
+inputImagePath = 'inputImgs/tree2.png';
 I = imread(inputImagePath);
 r = 15;
 beta = 1.0;
@@ -11,7 +11,8 @@ eps = 10^-3;
 %-------------------------------------------------
 tic;
 [dR, dP] = calVSMap(I, r);
-refineDR = imguidedfilter(dR, I, 'NeighborhoodSize', [gimfiltR, gimfiltR], 'DegreeOfSmoothing', eps);
+refineDR = fastguidedfilter_color(double(I)/255, dP, r, eps, r/4);
+%refineDR = imguidedfilter(dR, double(I)/255, 'NeighborhoodSize', [gimfiltR, gimfiltR], 'DegreeOfSmoothing', eps);
 tR = exp(-beta*refineDR);
 tP = exp(-beta*dP);
 
